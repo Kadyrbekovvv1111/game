@@ -6,7 +6,7 @@ clock = pygame.time.Clock()
 
 pygame.mixer.init()
 
-# Загрузка музыки
+
 pygame.mixer.music.load("music/game.mp3")
 pygame.mixer.music.play(-1, 0.0)
 
@@ -16,7 +16,7 @@ icon = pygame.image.load("images/icon.png")
 pygame.display.set_icon(icon)
 background = pygame.image.load("images/backround.jpg")
 
-# Анимации для бега влево и вправо
+
 walk_left = [
     pygame.image.load('images/player_left/person_left_1.png').convert_alpha(),
     pygame.image.load('images/player_left/person_left_2.png').convert_alpha(),
@@ -62,7 +62,7 @@ bg_x = 0
 running = True
 while running:
 
-    # Прокрутка фона
+
     screen.blit(background, (bg_x, 0))
     screen.blit(background, (bg_x + 800, 0))
 
